@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>loadCSS</title>
+
+</head>
+<body>
+
+    <h1>loadCSS</h1>
+
+    <p>This is a test page that references a slow loading stylesheet loaded manually with loadCSS<p>
+      
+
+    <script src="../src/loadcss.min.js"></script>
+    <script>
+    loadCSS('slow.css.php', 'all', function(){
+        alert('Finally loaded');
+    });
+    </script>
+
+</body>
+</html>
