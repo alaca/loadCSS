@@ -1,5 +1,5 @@
 # loadCSS
-Loading CSS asynchronously
+Load CSS asynchronously
 
 ### Usage
 ```
@@ -12,14 +12,14 @@ Loading CSS asynchronously
 ### Manual CSS loading
 ```javascript
 <script>
-loadCSS('mystyle.css');
+loadCSS('mystyle.css', 'all');
 </script>
  ```
 
-**Using onload event**
+### Using onload event
 ```javascript
 <script>
-loadCSS('mystyle.css', function(link){
+loadCSS('mystyle.css', 'all', function(link){
 
     console.log(link.href);
 
