@@ -20,9 +20,7 @@ loadCSS('mystyle.css', 'all');
 ```javascript
 <script>
 loadCSS('mystyle.css', 'all', function(link){
-
     console.log(link.href);
-
 });
 </script>
 ```
